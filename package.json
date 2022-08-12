@@ -1,0 +1,36 @@
+{
+  "name": "now-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.0.0-rc.6",
+    "@apollo/react-hooks": "^4.0.0-beta.1",
+    "@apollo/react-ssr": "^4.0.0-beta.1",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "apollo-link-rest": "^0.8.0-beta.0",
+    "autosuggest-highlight": "^3.1.1",
+    "graphql": "^15.0.0",
+    "graphql-anywhere": "^4.2.7",
+    "graphql-tag": "^2.10.3",
+    "he": "^1.2.0",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "next": "9.4.1",
+    "next-server-context": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-markdown": "^5.0.3",
+    "react-text-truncate": "^0.16.0",
+    "remove-markdown": "^0.3.0",
+    "universal-cookie": "^4.0.4"
+  }
+}

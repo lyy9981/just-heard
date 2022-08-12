@@ -1,0 +1,23 @@
+version: '3'
+services:
+    app:
+        build:
+            context: ./
+        command: "sh -c 'yarn start'"
+        restart: always
+        environment:
+            - PORT=3000
+            - NODE_ENV=production
+        ports:
+            - 3000:3000
+
+    nginx:
+        image: nginx:1.19-alpine
+        restart: unless-stopped
+        volumes:
+            - ./data/nginx:/etc/nginx/conf.d
+        ports:
+            - "80:80"
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+        depends_on:
+            - app
